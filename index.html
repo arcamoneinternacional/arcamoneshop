@@ -34,14 +34,67 @@ footer{background:#24191b;color:#f6efeb;padding:32px 22px}.foot{max-width:1200px
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#2b2021;color:white;padding:11px 17px;font-size:12px;display:none;z-index:20}.toast.show{display:block}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-inner{grid-template-columns:1fr}.hero-note{justify-self:start}.navlinks{display:none}}
 @media(max-width:480px){.nav{padding:14px 16px}.brand{font-size:21px}.hero-inner{padding:50px 18px}.hero-note{max-width:none}main{padding:34px 14px 50px}.grid{gap:10px}.details{padding:11px}.details h3{font-size:13px}.info{grid-template-columns:1fr;padding:22px;gap:18px}.section-head h2{font-size:28px}.foot{display:block}.foot small{display:block;margin-top:10px}}
+
+/* 2026 storefront refinement */
+:root{--wine:#5a1725;--wine2:#301019;--cream:#f8f5f1;--ink:#20191a;--muted:#74696a;--line:#e9e1dd;--gold:#b99a73;--white:#fff}
+html{scroll-behavior:smooth;scroll-padding-top:88px}body{background:#fcfbfa;letter-spacing:.005em;-webkit-font-smoothing:antialiased}
+.topbar{padding:10px 14px;font-size:10px;letter-spacing:.16em;background:#281016}
+header{background:rgba(255,255,255,.96);backdrop-filter:blur(16px);box-shadow:0 4px 22px rgba(43,20,25,.045)}
+.nav{max-width:1320px;padding:17px 28px}.brand{font-size:23px;letter-spacing:.11em}.brand small{font-size:9px;letter-spacing:.29em}
+.navlinks{gap:30px;font-size:12px;font-weight:600;color:#514749}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--wine)}
+.cartbtn{border:1px solid #d9c9c6;border-radius:999px;padding:11px 18px;font-weight:650;transition:all .2s}.cartbtn:hover{background:var(--wine);color:#fff;border-color:var(--wine)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 20%,rgba(181,141,120,.24),transparent 35%),linear-gradient(115deg,#2c1019 0%,#591c2a 60%,#713847 100%)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.3) 50%,transparent 50.2%);background-size:120px 100%}
+.hero-inner{position:relative;z-index:1;max-width:1320px;padding:86px 28px 88px;grid-template-columns:1.15fr .85fr;gap:64px;min-height:430px}
+.eyebrow{font-size:10px;letter-spacing:.24em}.hero h1{font-size:clamp(44px,6.2vw,76px);line-height:1.01;letter-spacing:-.035em;margin:21px 0 19px;max-width:720px}.hero p{font-size:15px;line-height:1.85;max-width:550px;color:#f3e9e6}
+.primary{border-radius:999px;padding:15px 24px;margin-top:22px;font-size:12px;letter-spacing:.03em;transition:transform .2s,box-shadow .2s}.primary:hover{transform:translateY(-2px);box-shadow:0 9px 24px #16070b55;opacity:1}
+.hero-note{border:1px solid rgba(255,255,255,.22);border-radius:4px;padding:30px;max-width:380px;background:rgba(255,255,255,.075);backdrop-filter:blur(12px);box-shadow:0 18px 50px rgba(0,0,0,.12)}.hero-note strong{font-size:27px;line-height:1.1}.hero-note span{display:block;margin-top:10px;font-size:12px;line-height:1.8}
+main{max-width:1320px;padding:66px 28px 82px}#catalogo{scroll-margin-top:100px}.section-head{margin-bottom:25px}.section-head h2{font-size:clamp(30px,4vw,42px);letter-spacing:-.025em}.section-head p{font-size:13px;line-height:1.7}
+.filters{gap:9px;margin:25px 0 24px}.filter{padding:9px 16px;border-radius:999px;font-size:11px;font-weight:650;transition:all .18s}.filter:not(.active):hover{border-color:#b99a73;color:var(--wine)}
+.grid{gap:22px}.card{border:1px solid #eee8e4;border-radius:4px;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(50,24,29,.09);border-color:#e1d4ce}.photo{background:#f2efec;aspect-ratio:4/4.8}.photo img{transition:transform .55s cubic-bezier(.2,.7,.2,1)}.card:hover .photo img{transform:scale(1.045)}
+.details{padding:16px}.tag{font-size:9px;letter-spacing:.16em}.details h3{font-size:14px;line-height:1.4;margin:9px 0 6px}.details p{font-size:11px;line-height:1.6;min-height:36px}.price{font-size:16px}.unit{font-size:10px}.min{font-size:10px;margin-top:7px}.add{border-radius:999px;padding:12px;margin-top:15px;font-size:11px;letter-spacing:.025em;transition:background .2s,transform .2s}.add:hover{background:#35121b;transform:translateY(-1px)}
+.info{border-radius:5px;background:#f5f0eb;border:1px solid #eee5df;padding:30px;margin-top:62px;gap:28px}.info>div{padding:4px 5px}.info strong{font-size:18px}.info span{font-size:11px;line-height:1.75}
+footer{background:#211519;padding:38px 28px}.foot{max-width:1320px}.foot small{line-height:1.8}
+.drawer{padding:26px}.drawer-head{padding-bottom:18px}.drawer h2{font-size:28px}.checkout input{border-radius:7px;padding:12px 13px;background:#fff}.checkout input:focus{outline:2px solid #b99a73;outline-offset:1px}.paybox{border-radius:8px;background:#f6f1ed;padding:15px}.submit{border-radius:999px;padding:15px;font-size:12px;letter-spacing:.02em;transition:background .2s}.submit:hover{background:#35121b}.hint{font-size:10px;line-height:1.7}.toast{border-radius:999px;box-shadow:0 8px 30px #0003}
+@media(max-width:900px){.hero-inner{gap:28px;padding:66px 24px}.hero-note{max-width:100%;justify-self:stretch}.nav{padding:15px 22px}.grid{gap:15px}}
+@media(max-width:600px){.topbar{font-size:9px;letter-spacing:.11em}.nav{padding:14px 16px}.brand{font-size:20px}.cartbtn{padding:10px 14px;font-size:11px}.hero-inner{padding:53px 19px 56px;gap:28px;min-height:0}.hero h1{font-size:clamp(40px,11vw,56px);margin:17px 0}.hero p{font-size:13px;line-height:1.75}.hero-note{padding:21px}.hero-note strong{font-size:23px}main{padding:45px 15px 56px}.section-head h2{font-size:31px}.filters{margin:20px 0}.grid{gap:10px}.details{padding:11px}.details h3{font-size:12px}.details p{font-size:10px;min-height:42px}.price{font-size:14px}.add{padding:11px 7px;font-size:10px}.info{padding:21px;margin-top:42px;gap:16px}.foot{display:block}.foot small{display:block;margin-top:12px}footer{padding:30px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Storefront polish: clear steps, accessible focus, responsive trust cues */
+.service-strip{background:#fff;border-bottom:1px solid #eee7e2;border-top:1px solid rgba(255,255,255,.1)}
+.service-inner{max-width:1264px;margin:auto;padding:19px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-inner>div{display:flex;align-items:center;gap:13px;min-width:0}
+.service-mark{font:italic 17px Georgia,serif;color:#a17e5e;border-right:1px solid #e7ddd6;padding-right:13px}
+.service-inner b{display:block;font-size:12px;letter-spacing:.01em;color:#35282a}
+.service-inner small{display:block;font-size:11px;color:#817577;margin-top:4px;line-height:1.4}
+button,a,select,input{ -webkit-tap-highlight-color:transparent }
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #b99a73;outline-offset:3px}
+.navlinks a{position:relative;padding:8px 0}
+.navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:var(--wine);transition:right .2s}
+.navlinks a:hover:after{right:0}
+.filter{min-height:38px}.add,.submit,.cartbtn,.primary{min-height:44px}
+.photo{position:relative}.photo:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(40,20,20,.025)}
+.details{display:flex;flex-direction:column}.details .add{margin-top:auto}
+.info{box-shadow:0 12px 35px rgba(54,29,32,.035)}
+@media(max-width:700px){.service-inner{padding:15px 18px;grid-template-columns:1fr;gap:12px}.service-inner>div{gap:10px}.service-mark{width:28px}.service-inner small{font-size:10px}}
+@media(hover:none){.card:hover{transform:none;box-shadow:none}.card:hover .photo img{transform:none}}
+
 </style>
 </head>
 <body>
-<div class="topbar">ARCAMONE INTERNACIONAL &nbsp; · &nbsp; VENTA MAYORISTA DE INDUMENTARIA</div>
+<div class="topbar">PEDIDOS Y CONSULTAS POR WHATSAPP &nbsp; · &nbsp; VENTA MAYORISTA DE INDUMENTARIA</div>
 <header><nav class="nav"><a class="brand" href="#">ARCAMONE <small>SHOP · INTERNACIONAL</small></a><div class="navlinks"><a href="#catalogo">Catálogo</a><a href="#mayorista">Compra mayorista</a><a href="#contacto">Contacto</a></div><button class="cartbtn" onclick="openCart()">Carrito (<span id="cartCount">0</span>)</button></nav></header>
-<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Colección seleccionada · 2026</div><h1>Estilo que conecta.<br>Precios mayoristas.</h1><p>Prendas casuales y tejidos de temporada para tiendas, revendedores y emprendimientos. Armá tu pedido desde el catálogo y consultá disponibilidad por WhatsApp.</p><button class="primary" onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Explorar catálogo&nbsp; ↓</button></div><div class="hero-note"><strong>Comprá por cantidad</strong><span>Pedido mínimo indicado en cada producto. Precio publicado: ARS $20.000 por unidad. Confirmá stock, talle y volumen al recibir el pedido.</span></div></div></section>
+<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Colección seleccionada · 2026</div><h1>Vestí tu próxima<br>temporada con estilo.</h1><p>Una selección de prendas para tiendas, revendedores y proyectos que buscan diferenciarse. Explorá los modelos, elegí talles y enviá tu pedido directamente a nuestro equipo por WhatsApp.</p><button class="primary" onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Explorar catálogo&nbsp; ↓</button></div><div class="hero-note"><strong>Comprá con información clara</strong><span>Armá tu pedido sin pagar en la web. Confirmamos disponibilidad, cantidades, envío y total final por WhatsApp. Recién después te compartimos los datos para transferir.</span></div></div></section>
+<section class="service-strip" aria-label="Cómo comprar">
+  <div class="service-inner">
+    <div><span class="service-mark">01</span><span><b>Elegí tus prendas</b><small>Armá tu selección en el catálogo.</small></span></div>
+    <div><span class="service-mark">02</span><span><b>Coordiná por WhatsApp</b><small>Revisamos talles y disponibilidad.</small></span></div>
+    <div><span class="service-mark">03</span><span><b>Confirmá antes de pagar</b><small>Te pasamos total, envío y CBU.</small></span></div>
+  </div>
+</section>
 <main>
-<section id="catalogo"><div class="section-head"><div><div class="eyebrow" style="color:#a07c54">Selección de temporada</div><h2>Catálogo mayorista</h2><p>Elegí los modelos y agregalos a tu pedido.</p></div></div><div class="filters" id="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Polo">Polos</button><button class="filter" data-cat="Remera">Remeras</button><button class="filter" data-cat="Conjunto">Conjuntos</button></div><div class="grid" id="productGrid"></div></section>
+<section id="catalogo"><div class="section-head"><div><div class="eyebrow" style="color:#a07c54">Selección de temporada</div><h2>Catálogo mayorista</h2><p>Elegí tus modelos y talles. El pedido se confirma personalmente antes del pago.</p></div></div><div class="filters" id="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Polo">Polos</button><button class="filter" data-cat="Remera">Remeras</button><button class="filter" data-cat="Conjunto">Conjuntos</button></div><div class="grid" id="productGrid"></div></section>
 <section class="info" id="mayorista"><div><strong>Venta por mayor</strong><span>Consultá cantidades, talles y precios por volumen antes de confirmar.</span></div><div><strong>Pedido a medida</strong><span>Sumá distintos modelos al carrito. El equipo confirma stock y total final.</span></div><div><strong>Atención directa</strong><span>Dejanos tus datos en el pedido para coordinar la compra y el envío.</span></div></section>
 </main>
 <footer id="contacto"><div class="foot"><div class="brand" style="color:#fff">ARCAMONE <small style="color:#c7b9b5">SHOP · INTERNACIONAL</small></div><small>Comercio mayorista · Argentina<br>Consultas y pedidos sujetos a confirmación de stock.</small></div></footer>
